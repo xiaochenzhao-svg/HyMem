@@ -1,0 +1,20 @@
+# IDE
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Env
+.env
+.venv/
+conda-meta/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
