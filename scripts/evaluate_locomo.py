@@ -320,9 +320,10 @@ def evaluate_dataset(
         
         logger.info(f"Processing sample {sample_idx + 1}/{len(samples)}")
         valid_qas = [
-            (idx, qa)
-            for idx, qa in enumerate(sample.qa)
-            if int(qa.category) in allowed_categories
+            (i, qa)
+            for i, qa in enumerate(
+                [qa for qa in sample.qa if int(qa.category) in allowed_categories]
+            )
         ]
 
         results = [None] * len(valid_qas)
