@@ -27,11 +27,9 @@ class LLMConfig:
     def __post_init__(self):
         """Load from environment if not provided."""
         if self.api_key is None:
-            # self.api_key = os.getenv("OPENAI_API_KEY")
-            self.api_key = "sk-wrdd0kqjNnfHHebel8zIZQ5bGWPkSGDJeMd4pfAm8st2Igs7"
+            self.api_key = os.getenv("OPENAI_API_KEY")
         if self.base_url is None:
-            # self.base_url = os.getenv("OPENAI_BASE_URL")
-            self.base_url = "https://poloapi.top/v1/"
+            self.base_url = os.getenv("OPENAI_BASE_URL")
 
 @dataclass
 class EmbeddingConfig:
