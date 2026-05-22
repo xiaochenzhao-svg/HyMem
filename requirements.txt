@@ -1,0 +1,7 @@
+# Core runtime dependencies for HyMem
+numpy>=1.21.0
+openai>=1.0.0
+llama-index-embeddings-openai>=0.1.0
+httpx>=0.24.0
+tiktoken>=0.5.0
+tenacity>=8.0.0

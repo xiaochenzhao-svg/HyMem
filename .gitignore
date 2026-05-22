@@ -1,0 +1,23 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Local virtual envs
+.venv/
+venv/
+.env
+
+# User-specific runtime artefacts (must NOT be committed)
+config.json
+mem_dir/
+cached_memories/
+*.pkl
+*.npy
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store

@@ -1,0 +1,38 @@
+{
+  "llm": {
+    "model_name": "gpt-4o-mini",
+    "api_key": "YOUR_LLM_API_KEY",
+    "base_url": "https://api.openai.com/v1",
+    "temperature": 0.7,
+    "max_tokens": 2048,
+    "timeout": 60
+  },
+  "embedding": {
+    "model_name": "text-embedding-3-small",
+    "api_key": "YOUR_EMBEDDING_API_KEY",
+    "base_url": "https://api.openai.com/v1"
+  },
+  "retrieval": {
+    "retrieve_k": 10,
+    "retrieve_k_rough": 30,
+    "short_term_turns": 8,
+    "enable_self_check": false
+  },
+  "session": {
+    "max_session_tokens": 4096,
+    "auto_save_sessions": true,
+    "async_indexing": true
+  },
+  "dedup": {
+    "enabled": true,
+    "top_k": 5,
+    "sim_threshold": 0.82
+  },
+  "cache": {
+    "enable_cache": true,
+    "cache_dir": "cached_memories",
+    "use_pickle": true
+  },
+  "backend": "openai",
+  "log_level": "INFO"
+}
